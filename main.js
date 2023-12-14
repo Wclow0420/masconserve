@@ -80,13 +80,33 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal(`.home__header, .section__title`,{delay: 600})
+sr.reveal(`.home__header, .section__title,.sectionpart__title`,{delay: 600})
 sr.reveal(`.home__footer`,{delay: 700})
 sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
 sr.reveal(`.home__img1`,{delay:900,origin: 'top'})
 
 sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`,{origin: 'top', interval: 100})
-sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
-sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
-sr.reveal(`.case__img`,{origin: 'top'})
+sr.reveal(`.specs__data, .discount__animate,.specs__data1,.part__data,.fan__data,.sanjiao`,{origin: 'left', interval: 100})
+sr.reveal(`.specs__img, .discount__img,.specs__img1,.part__img`,{origin: 'right'})
+sr.reveal(`.case__img,.qc__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
+
+
+// Get all the image elements
+const imageElements = document.querySelectorAll('.home__img, .home__img1, .sponsor__img, .products__card, .specs__img, .discount__img, .specs__img1, .part__img, .case__img, .qc__img');
+
+// Add an event listener to each image element
+imageElements.forEach((img) => {
+
+    img.addEventListener('mouseover', () => {
+        // Scale the image on hover
+        img.style.transition = 'transform 1s';
+        img.style.transform = 'scale(1.1)';
+    });
+
+    img.addEventListener('mouseout', () => {
+        img.style.transition = 'transform 1s';
+        // Reset the scale when the mouse leaves
+        img.style.transform = 'scale(1)';
+    });
+});
