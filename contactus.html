@@ -12,6 +12,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="triangle.css">
 
         <title>Masconserve</title>
     </head>
@@ -54,90 +55,24 @@
         </header>
 
         <main class="main">
-            <div id="index">
-            <!--=============== HOME ===============-->
-            <section class="home section">
-                <div class="home__container container grid">
-                    <div>
-                        <img src="assets/img/facade1.jpg" alt="" class="home__img1">
-                    </div>
-                    
-                    <div class="home__data">
-                        <div class="home__header">
-                            <h1 class="home__title">Welcome to</h1>
-                            <h2 class="home__subtitle">Masconserve</h2>
-                        </div>
+            <div id="aboutus">
 
-                        <div class="home__footer">
-                            <h3 class="home__title-description">Overview</h3>
-                            <p class="home__description">-
-                            </p>
-                            <a href="#case" class="button button--flex">
-                                <span class="button--flex">
-                                    <i class="ri-earth-line"></i></i> Explore Now
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+            <!--=============== R&D ===============-->
+            <section class="specs section grid" id="more">
+                <h2 class="sectionpart__title section__title-gradient">Contact Us</h2>
+
+                <div class="contact__box">
+                        <form class="contact__form" action="https://formsubmit.co/sales@masconserve-tech.com" method="POST">
+                            <input type="text" name="name" required placeholder="Name">
+                            <input type="email" name="email" required placeholder="Email">
+                            <input type="text" name="title" required placeholder="Title">
+                            <textarea placeholder="Message"></textarea>
+                            <button type="submit">Submit</button>
+                       </form>
                 </div>
             </section>
 
-            <!--=============== CASE ===============-->
-            <section class="case section grid" id="case">
-                <h2 class="section__title section__title-gradient">About Us</h2>
-
-                <div class="case__container container grid">
-                    <div>
-                        <img src="assets/img/about.png" alt="" class="case__img">
-                    </div>
-
-                    <div class="case__data">
-                        <p class="case__description">Our primary goal is to provide you with the most reliable and high-quality fans, ensuring your trust and satisfaction.
-                        </p>
-                        <a href="aboutus.html" class="button button--flex">
-                            <i class="ri-service-line"></i> Know More About Us
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== Contact Now ===============-->
-            <section class="discount section">
-                <h2 class="section__title section__title-gradient">Products</h2>
-                <div class="discount__container container grid">
-                    <div class="discount__animate">
-                            <h2 class="discount__title">Axial Fan</h2>
-                            <p class="discount__description">Check it now.</p>
-                            <a href="axialfan.html" class="button button--flex">
-                                <i class="ri-send-plane-2-line"></i> Explore
-                            </a>
-                    </div>
-
-                    <img src="assets/img/FC51.png" alt="" class="discount__img">
-                </div>
-                <div class="discount__container container grid">
-                    <div class="discount__animate">
-                        <h2 class="discount__title">Fan Component</h2>
-                        <p class="discount__description">Check it now.</p>
-                        <a href="fancomponent.html" class="button button--flex">
-                            <i class="ri-send-plane-2-line"></i> Explore
-                        </a>
-                    </div>
-
-                    <img src="assets/img/MotorAc.png" alt="" class="discount__img">
-                </div>
-                <div class="discount__container container grid">
-                    <div class="discount__animate">
-                        <h2 class="discount__title">OEM/ODM Fan</h2>
-                        <p class="discount__description">Check it now.</p>
-                        <a href="oemodm.html" class="button button--flex">
-                            <i class="ri-send-plane-2-line"></i> Explore
-                        </a>
-                    </div>
-
-                    <img src="assets/img/oemhome.png" alt="" class="discount__img">
-                </div>
-            </section>
+            
 
         <!--=============== FOOTER ===============-->
         <footer class="footer section">

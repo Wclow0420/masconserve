@@ -238,6 +238,54 @@ img {
   background-clip: text;
 }
 /*=============ABOUT US===============*/
+.contact__box{
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact_frame{
+  position: relative;
+  width: 50%;
+  height: 300px;
+  background-color: blue;
+}
+
+.contact__form{
+  background: var(--black-color-alt);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.contact__form input, .contact__form textarea{
+  border:0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact__form button{
+  padding: 15px;
+  background: #ff5361;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+/*=============ABOUT US===============*/
 .about__container {
   position: relative;
 }
