@@ -290,6 +290,20 @@ img {
 .about__container {
   position: relative;
 }
+
+.backgroundimg{
+  width: 100%;
+  position: absolute;
+  height: 850px;
+  opacity: 0.2;
+}
+
+.backgroundimg1{
+  width: 100%;
+  position: absolute;
+  height: 1000px;
+  opacity: 0.2;
+}
 /*=============== HOME ===============*/
 .home__img {
   position: absolute;
@@ -718,6 +732,9 @@ img {
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 281px) {
+  .backgroundimg{
+    display: none;
+  }
   .discount__img {
     position: absolute;
     width: 150px;
@@ -726,6 +743,12 @@ img {
   }
 }
 @media screen and (max-width: 340px) {
+  .backgroundimg1{
+    display: none;
+  }
+  .backgroundimg{
+    display: none;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -838,6 +861,12 @@ img {
 }
 
 @media screen and (min-width: 341px) {
+  .backgroundimg1{
+    display: none;
+  }
+  .backgroundimg{
+    display: none;
+  }
   .case__data {
     padding: 0;
   }
@@ -1078,6 +1107,9 @@ img {
 }
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .backgroundimg{
+    display: none;
+  }
   .qc__img{
     width: 500px;
     margin-bottom: 1.5rem;
@@ -1185,6 +1217,18 @@ img {
 }
 
 @media screen and (min-width: 767px) {
+  .backgroundimg{
+    width: 100%;
+    position: absolute;
+    height: 550px;
+    display: block;
+  }
+  .backgroundimg1{
+    width: 100%;
+    position: absolute;
+    height: 700px;
+    display: block;
+  }
   body {
     margin: 0;
   }
@@ -1260,9 +1304,29 @@ img {
   .footer__container {
     grid-template-columns: .4fr .7fr .7fr 1fr;
   }
+  .backgroundimg{
+    width: 100%;
+    position: absolute;
+    height: 750px;
+  }
+  .backgroundimg1{
+    width: 100%;
+    position: absolute;
+    height: 800px;
+  }
 }
 
 @media screen and (min-width: 894px){
+  .backgroundimg{
+    width: 100%;
+    position: absolute;
+    height: 850px;
+  }
+  .backgroundimg1{
+    width: 100%;
+    position: absolute;
+    height: 800px;
+  }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -1283,6 +1347,11 @@ img {
 }
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .backgroundimg1{
+    width: 100%;
+    position: absolute;
+    height: 1000px;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
