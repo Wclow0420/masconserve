@@ -85,7 +85,7 @@ sr.reveal(`.home__footer`,{delay: 700})
 sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
 sr.reveal(`.home__img1`,{delay:900,origin: 'top'})
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy,.contact__box`,{origin: 'top', interval: 100})
+sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__logo2, .footer__content, .footer__copy,.contact__box`,{origin: 'top', interval: 100})
 sr.reveal(`.specs__data, .discount__animate,.specs__data1,.part__data,.fan__data,.sanjiao`,{origin: 'left', interval: 100})
 sr.reveal(`.specs__img, .discount__img,.specs__img1,.part__img`,{origin: 'right'})
 sr.reveal(`.case__img,.qc__img`,{origin: 'top'})

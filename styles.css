@@ -162,6 +162,12 @@ img {
   width: 2rem;
 }
 
+.nav_logo2{
+  display: flex;
+  width: 9rem;
+  
+}
+
 .logo__text{
   color: #39404E;
   padding-top: 0.2rem;
@@ -616,6 +622,9 @@ img {
   width: 2rem;
 }
 
+.footer__logo2{
+  display: none;
+}
 .footer__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
@@ -730,6 +739,16 @@ img {
 }
 
 /*=============== MEDIA QUERIES ===============*/
+
+@media screen and (max-width: 485px){
+  .footer__logo2{
+    width: 9rem;
+    display: flex;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+  }
+}
 /* For small devices */
 @media screen and (max-width: 281px) {
   .backgroundimg{
@@ -1315,7 +1334,19 @@ img {
     height: 800px;
   }
 }
-
+@media screen and (min-width: 1000px){
+  .nav_logo2{
+    position: absolute;
+    padding-left: 2rem;
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 893px){
+  .nav_logo2{
+    position: absolute;
+    padding-left: 2rem;
+  }
+}
 @media screen and (min-width: 894px){
   .backgroundimg{
     width: 100%;
@@ -1332,6 +1363,9 @@ img {
   }
   .nav__logo {
     width: 2rem;
+  }
+  .nav_logo2{
+    width: 9rem;
   }
   .nav__list {
     flex-direction: row;
